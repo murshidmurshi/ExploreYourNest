@@ -1,0 +1,19 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,                 // Enables strict type-checking options
+    "noImplicitAny": true,          // Raises error on expressions with an implied `any` type
+    "skipLibCheck": true,           // Skips checking of declaration files to speed up build
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "jsx": "react-native"           // Sets JSX to work specifically with React Native
+    
+  },
+  "include": ["src","types"],               // Specify folders to include, e.g., your source folder
+  "exclude": ["node_modules"]       // Exclude the node_modules folder from being type-checked
+}

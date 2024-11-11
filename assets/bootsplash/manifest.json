@@ -1,0 +1,8 @@
+{
+    "name": "ExploreYourNest",
+    "backgroundColor": "#ffffff",
+    "imagePath": "./logo.png",
+    "darkImagePath": "./logo.png",
+    "statusBarTranslucent": true
+  }
+  
