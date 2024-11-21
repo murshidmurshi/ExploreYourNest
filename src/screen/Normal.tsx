@@ -5,7 +5,8 @@ import { fonts } from '../component/customeText/fonts'
 import Animated, { Easing, ReduceMotion, useAnimatedProps, useAnimatedStyle, useSharedValue, withDecay, withDelay, withRepeat, withSpring, withTiming } from 'react-native-reanimated'
 import { Button, useTheme } from 'react-native-paper'
 import Svg, { Circle } from 'react-native-svg'
-import { useNavigation } from '@react-navigation/native'
+import { NavigationProp, useNavigation } from '@react-navigation/native'
+import type { RootParamList } from '../GlobalTypes'
 export default function AppNavigator() {
     let theme = useTheme()
     const width = useSharedValue<number>(100);
@@ -134,8 +135,11 @@ export default function AppNavigator() {
 
     }, [])
 
+    let navigation = useNavigation<NavigationProp<RootParamList>>();
 
-    let navigation = useNavigation();
+
+
+
 
     return (
         <>
@@ -143,6 +147,9 @@ export default function AppNavigator() {
 
                 <Button onPress={() => navigation.navigate("Gesture")}>
                     To Gesture
+                </Button>
+                <Button onPress={() => navigation.navigate("Scroll")}>
+                    To Scroll
                 </Button>
                 <View className='bg-green-900'>
                     <CustomText style={{ fontFamily: fonts.ThinItalic }}>
