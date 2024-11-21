@@ -35,8 +35,10 @@ export default function GestureComponent() {
       pressed.value = false;
 
     });
+    
+
+
   return (
- 
  <>
  
  
