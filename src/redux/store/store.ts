@@ -5,7 +5,6 @@ const store = configureStore({
     reducer: {
         //Define slice here
         theme:ThemeSlice,
-        
     }
 });
 

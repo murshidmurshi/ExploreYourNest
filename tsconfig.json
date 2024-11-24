@@ -14,6 +14,7 @@
     "jsx": "react-native"           // Sets JSX to work specifically with React Native
     
   },
-  "include": ["src","types"],               // Specify folders to include, e.g., your source folder
+  "include": ["src","types",],               // Specify folders to include, e.g., your source folder
   "exclude": ["node_modules"]       // Exclude the node_modules folder from being type-checked
+  
 }
