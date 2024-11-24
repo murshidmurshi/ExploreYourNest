@@ -5,9 +5,10 @@ import { Text } from 'react-native-paper';
 interface CustomTextProps{
   style?:StyleProp<TextStyle>,
   children:React.ReactNode;
+  className?:string;
 }
 
-const CustomText:React.FC<CustomTextProps>=({style,children,...props})=>{
+const CustomText:React.FC<CustomTextProps>=({style,className,children,...props})=>{
   return <Text style={[style]} {...props}>{children}</Text>
 }
 
