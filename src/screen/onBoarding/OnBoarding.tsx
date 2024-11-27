@@ -132,7 +132,7 @@ export default function OnBoarding() {
   }
 
   const CustomPagination: React.FC<CustomPaginationProps> = ({ selected }) => {
-    const backgroundColor = { backgroundColor: selected ? theme.colors.secondary : theme.colors.onBackground }
+    const backgroundColor = { backgroundColor: selected ? theme.colors.secondary : theme.colors.inversePrimary }
     return (
       <View
         style={[

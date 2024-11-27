@@ -8,8 +8,7 @@ import type { RootParamList } from '../GlobalTypes';
 import OnBoarding from '../screen/onBoarding/OnBoarding';
 import Login from '../screen/auth/Login';
 import Register from '../screen/auth/Register';
-import Parent from '../screen/Parent';
-
+import BottomNavigation from '../screen/BottomNavigation';
 
 const Stack = createNativeStackNavigator<RootParamList>();
 export default function AppNavigator() {
@@ -22,7 +21,7 @@ export default function AppNavigator() {
           <Stack.Screen name="Register" component={Register} />
 
           {/* User screens */}
-          <Stack.Screen name="Parent" component={Parent} />
+          <Stack.Screen name="BottomTab" component={BottomNavigation} />
           
         </Stack.Navigator>
       </NavigationContainer>

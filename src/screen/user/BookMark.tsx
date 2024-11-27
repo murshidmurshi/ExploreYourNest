@@ -1,12 +1,11 @@
-//page for home bottom tab
-
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function UserHome() {
+export default function BookMark() {
   return (
-    <>
-    </>
+    <View>
+      <Text>BookMark</Text>
+    </View>
   )
 }
 

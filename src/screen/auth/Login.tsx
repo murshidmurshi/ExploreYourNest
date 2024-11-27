@@ -39,7 +39,7 @@ export default function Login() {
 
     const handleSignIn = () => {
         showToast("Login Successfull ...", "success")
-        navigation.navigate("Parent", { role: form.email })
+        navigation.navigate("BottomTab", { role: form.email })
     };
 
     return (
