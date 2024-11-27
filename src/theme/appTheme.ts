@@ -13,9 +13,10 @@ export const lightTheme = {
     background: '#f2f2f2',
     primary: "#006FFF",
     secondary: "#246BFD",  //also for icons
-    scrim:"rgb(96, 95, 95)",
-    shadow: "rgba(128, 128, 128, 0.303)" ,  // Use `as any` as a last resort
-
+    // #D1E0FE app  light color of 
+    inversePrimary: "#D1E0FE",
+    scrim: "rgb(96, 95, 95)",
+    shadow: "rgba(128, 128, 128, 0.303)",  // Use `as any` as a last resort
   },
   roundness: 10,
 };
@@ -29,7 +30,8 @@ export const darkTheme = {
     background: 'rgb(23, 23, 23)',
     primary: "#006FFF",
     secondary: "#246BFD",
-    scrim:"rgb(96, 95, 95)",
+    inversePrimary: "#D1E0FE",
+    scrim: "rgb(96, 95, 95)",
     shadow: "rgba(128, 128, 128, 0.303)", // Your custom transparent grey
   },
   roundness: 10,

@@ -178,3 +178,10 @@ For Custom-Toaster :
 
 For BlueView :
 # npm i @react-native-community/blur
+
+For Iconify ://one of the best icon collection package 
+# npm install react-native-iconify@1.0.2
+then in babel.config.js and below code inside plugin array
+     'react-native-iconify/plugin',  // Add this line
+
+
